@@ -1,0 +1,5 @@
+{
+  "name": "UCO Monolithic PWA Food Analyzer",
+  "description": "A single-file, offline-first Progressive Web App that uses the Gemini API to analyze a photo of food and return its nutritional information. It uses localStorage for persistence and features a service worker registered via Blob URL for a complete offline experience.",
+  "requestFramePermissions": []
+}

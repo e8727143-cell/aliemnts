@@ -1,0 +1,398 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PWA-ADS-UCO | Analizador de Alimentos</title>
+    
+    <link rel="manifest" href="data:application/json;base64,ewogICAgIm5hbWUiOiAiVUNPLUFsdimentosIiwKICAgICJzaG9ydF9uYW1lIjogIlVDTy1BbmFsaXphZG9yIiwKICAgICJkZXNjcmlwdGlvbiI6ICJBbmFsaXphZG9yIG51dHJpY2lvbmFsIGRlIGFsaW1lbnRvcyBjb24gSUEiLAogICAgInN0YXJ0X3VybCI6ICIuLyIsCiAgICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAgICJpY29ucyI6IFsKICAgICAgICB7CiAgICAgICAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFDQUFBQUFnQ0FZQUFBQjZYOEhxQUFBQUJBWUFBQUFBRWdnQUVBQXNNQUFBQVY2QUFBQmlOaWt5TEFFeU1BQUFBVkhSakVVeFZWRVFWUlZGVWFWVkZWRkZSVkZGVkZTVkZW5iVlZWVlZVVlZlZlaGJWVmJWVlZWVVZWZlZlVlZlZlaFZWZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZlZ-QUFBQUkVSUkVOeUUiLAogICAgICAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIiwKICAgIC-ICAgICAgInB1cnBvc2UiOiAiYW55IgogICAgICAgIH0KICAgIF0KfQ==">
+    
+    <style>
+        :root {
+            --background-color: #181818;
+            --text-color: #E0E0E0;
+            --primary-color: #0088ff;
+            --secondary-color: #2a2a2a;
+            --border-color: #444;
+            --loader-color: var(--primary-color);
+        }
+
+        html, body {
+            margin: 0; 
+            padding: 0; 
+            background: var(--background-color); 
+            color: var(--text-color);
+            font-family: 'Consolas', 'Menlo', 'Courier New', monospace; 
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        #app-root { 
+            max-width: 600px; 
+            width: 100%;
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box; 
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            flex-shrink: 0;
+        }
+
+        #app-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            gap: 20px;
+        }
+
+        .upload-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            flex-shrink: 0;
+        }
+
+        #image-preview {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 8px;
+            background-color: var(--secondary-color);
+            border: 2px dashed var(--border-color);
+            display: none; /* Hidden until an image is selected */
+        }
+        
+        #analyze-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        #analyze-btn:hover {
+            background-color: #006fdd;
+        }
+        #analyze-btn:active {
+            transform: scale(0.98);
+        }
+
+        #results-container {
+            overflow-y: auto;
+            flex-grow: 1;
+            background-color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #999;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--loader-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .nutrition-card {
+            width: 100%;
+            text-align: left;
+            color: var(--text-color);
+        }
+
+        .nutrition-card h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-top: 0;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .nutrition-card p {
+            margin: 10px 0;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nutrition-card p strong {
+            color: #ccc;
+        }
+        .nutrition-card p span {
+             color: var(--text-color);
+        }
+
+        #status-msg {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            margin-top: 15px;
+            flex-shrink: 0;
+            height: 15px;
+        }
+
+        /* Scrollbar styles */
+        #results-container::-webkit-scrollbar { width: 8px; }
+        #results-container::-webkit-scrollbar-track { background: var(--secondary-color); }
+        #results-container::-webkit-scrollbar-thumb { background-color: var(--primary-color); border-radius: 4px; }
+
+    </style>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="UCO-Analyzer">
+    <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAAAXNSR0IArs4c6QAAAVBJREFUeF7t0AEJAAAMAsHZv/RyPNwSyDxk6CAQCAQCgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgEAgEAgUAgEAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgUAgEAgEAgEAgEAgUAgEAgEAgEAgUAgEAgEAgEAgEAgUAgEAgEAgEAgEAgUAgEAgEAgEAgEAgEAgUAgEAgEAgUAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgUCgUAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgEAgICAwDVp3wAFPhGzAAAAAElFTkSuQmCC">
+</head>
+<body>
+    <div id="app-root">
+        <h1>ADS-UCO | Analizador de Alimentos</h1>
+        <div id="app-content">
+            <div class="upload-area">
+                <img id="image-preview" src="" alt="Previsualización de imagen">
+                <input type="file" id="image-picker" accept="image/*" capture="environment" style="display: none;">
+                <button id="analyze-btn">📷 Analizar Alimento</button>
+            </div>
+            <div id="results-container">
+                <p>Selecciona una imagen para analizar.</p>
+            </div>
+        </div>
+        <p id="status-msg">Activando Módulos...</p>
+    </div>
+
+    <script type="module">
+        // This is a workaround to make the SDK available in the global scope
+        // for the non-module script part of the application.
+        import { GoogleGenAI } from "https://unpkg.com/@google/generative-ai/dist/index.min.js";
+        window.GoogleGenAI = GoogleGenAI;
+    </script>
+    <script>
+    (async () => {
+        // -- CONFIGURACIÓN --
+        const STORAGE_KEY = 'ADS_UCO_FoodAnalyzer';
+        const CACHE_NAME = 'uco-cache-v1-food';
+        
+        const statusMsgEl = document.getElementById('status-msg');
+        const imagePickerEl = document.getElementById('image-picker');
+        const analyzeBtnEl = document.getElementById('analyze-btn');
+        const imagePreviewEl = document.getElementById('image-preview');
+        const resultsContainerEl = document.getElementById('results-container');
+
+        // -- LÓGICA DE PERSISTENCIA (localStorage) --
+        const Persistence = {
+            load: () => {
+                try {
+                    const storedData = localStorage.getItem(STORAGE_KEY);
+                    return storedData ? JSON.parse(storedData) : null;
+                } catch (e) {
+                    console.error("Error al cargar datos de localStorage", e);
+                    return null;
+                }
+            },
+            save: (data) => {
+                try {
+                    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+                } catch (e) {
+                    console.error("Error al guardar datos en localStorage", e);
+                }
+            }
+        };
+
+        // -- LÓGICA DE LA APP CORE --
+        const APP_CORE = {
+            data: null,
+            
+            init() {
+                this.data = Persistence.load();
+                if (this.data) {
+                    this.renderResult(this.data);
+                } else {
+                    resultsContainerEl.innerHTML = '<p>Selecciona una imagen para analizar.</p>';
+                }
+
+                analyzeBtnEl.addEventListener('click', () => imagePickerEl.click());
+                imagePickerEl.addEventListener('change', (e) => this.handleFileSelect(e));
+
+                statusMsgEl.textContent = 'Núcleo Operativo Listo.';
+            },
+
+            handleFileSelect(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        imagePreviewEl.src = e.target.result;
+                        imagePreviewEl.style.display = 'block';
+                        this.analyzeImage(file);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            },
+            
+            async fileToBase64(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.onload = () => resolve(reader.result.split(',')[1]);
+                    reader.onerror = error => reject(error);
+                });
+            },
+
+            renderLoading() {
+                resultsContainerEl.innerHTML = '<div class="loader"></div>';
+                statusMsgEl.textContent = 'Analizando imagen...';
+            },
+
+            renderError(message) {
+                resultsContainerEl.innerHTML = `<p><strong>Error:</strong> ${message}</p>`;
+                statusMsgEl.textContent = 'Análisis fallido.';
+            },
+            
+            renderResult(data) {
+                if (!data || !data.foodName) {
+                    resultsContainerEl.innerHTML = '<p>No se pudo identificar el alimento. Intenta con otra imagen.</p>';
+                    return;
+                }
+                const vitamins = data.vitamins && data.vitamins.length > 0 ? data.vitamins.join(', ') : 'No especificado';
+                resultsContainerEl.innerHTML = `
+                    <div class="nutrition-card">
+                        <h2>${data.foodName}</h2>
+                        <p><strong>Calorías:</strong> <span>${data.calories || 'N/A'} kcal</span></p>
+                        <p><strong>Proteínas:</strong> <span>${data.protein || 'N/A'} g</span></p>
+                        <p><strong>Carbohidratos:</strong> <span>${data.carbohydrates || 'N/A'} g</span></p>
+                        <p><strong>Grasas:</strong> <span>${data.fat || 'N/A'} g</span></p>
+                        <p><strong>Vitaminas:</strong> <span>${vitamins}</span></p>
+                    </div>
+                `;
+                statusMsgEl.textContent = 'Análisis completado.';
+            },
+
+            async analyzeImage(file) {
+                if (!window.GoogleGenAI) {
+                    this.renderError("La biblioteca de IA no se cargó correctamente.");
+                    return;
+                }
+
+                this.renderLoading();
+
+                try {
+                    const base64Image = await this.fileToBase64(file);
+                    const ai = new window.GoogleGenAI({ apiKey: process.env.API_KEY });
+                    
+                    const response = await ai.models.generateContent({
+                        model: 'gemini-2.5-flash',
+                        contents: {
+                            parts: [
+                                {
+                                    inlineData: {
+                                        mimeType: file.type,
+                                        data: base64Image,
+                                    },
+                                },
+                                {
+                                    text: 'Analiza el alimento en esta imagen. Devuelve únicamente un objeto JSON con la siguiente estructura: {"foodName": "string", "calories": number, "protein": number, "carbohydrates": number, "fat": number, "vitamins": ["string", "string"]}. Estima los valores para una porción de 100g. Si no puedes identificar un alimento, devuelve un JSON con foodName como null.',
+                                },
+                            ],
+                        },
+                        config: {
+                            responseMimeType: "application/json",
+                        }
+                    });
+
+                    const resultText = response.text;
+                    const resultData = JSON.parse(resultText);
+                    
+                    this.data = resultData;
+                    Persistence.save(this.data);
+                    this.renderResult(this.data);
+
+                } catch (error) {
+                    console.error('Error en el análisis de Gemini:', error);
+                    this.renderError('No se pudo procesar la solicitud. Revisa la consola para más detalles.');
+                }
+            }
+        };
+        
+        // -- MOTOR DE PERSISTENCIA SW (La Trampa del BLOB) --
+        const SW_CODE = \`
+            const CACHE_NAME = '\${CACHE_NAME}';
+            const URLS_TO_CACHE = ['./'];
+
+            self.addEventListener('install', (event) => {
+                self.skipWaiting();
+                event.waitUntil(
+                    caches.open(CACHE_NAME).then((cache) => {
+                        console.log('SW: Cache abierto');
+                        return cache.addAll(URLS_TO_CACHE).catch(err => console.error('SW: Falla de Autocaching.', err));
+                    })
+                );
+            });
+
+            self.addEventListener('fetch', (event) => {
+                if (event.request.method !== 'GET') return;
+                event.respondWith(
+                    caches.match(event.request).then((response) => {
+                        if (response) return response; // Cache-First
+                        return fetch(event.request);
+                    })
+                );
+            });
+        \`;
+
+        // -- REGISTRO DE BOOTSTRAP DEL SW --
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                try {
+                    const swBlob = new Blob([SW_CODE], { type: 'application/javascript' });
+                    const swUrl = URL.createObjectURL(swBlob);
+                    
+                    navigator.serviceWorker.register(swUrl, { scope: './' })
+                        .then(reg => {
+                            console.log('SW: Registrado con BLOB URL. Persistencia Nivel Kernel.', reg.scope);
+                            APP_CORE.init();
+                        })
+                        .catch(error => {
+                            console.error('SW: Falla de Registro. Ejecutando sin Offline.', error);
+                            APP_CORE.init();
+                        });
+                } catch (e) {
+                    console.error('SW: Error Crítico al generar BLOB.', e);
+                    APP_CORE.init();
+                }
+            });
+        } else {
+            console.warn('SW: Navegador no soporta SW. Persistencia degradada.');
+            window.addEventListener('load', () => APP_CORE.init());
+        }
+    })();
+    </script>
+</body>
+</html>
